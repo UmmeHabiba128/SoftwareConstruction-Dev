@@ -1,10 +1,10 @@
-class User {
+class User_1 {
     void choice() {
         System.out.println("Choose your Role: Doctor, Patient or Receptionist");
     }
 } 
 
- class Patient extends User {
+ class Patient extends User_1 {
         int p_id;
         String p_name;
 
@@ -17,7 +17,7 @@ void PayBill() {
         }
     }
 
- class Doctor extends User {
+ class Doctor extends User_1 {
         int d_id;
         String d_name;
 
@@ -30,7 +30,7 @@ void PayBill() {
         }
     }
 
- class Receptionist extends User {
+ class Receptionist extends User_1 {
         int r_id;
         String r_name;
 
@@ -61,4 +61,5 @@ class Billing {
             this.B_amt = amt;
         }
     }
+
 
